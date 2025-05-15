@@ -3,14 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <title>Askan Technologies</title>
+<style>
+body{
+margin: 0;
+      height: 139vh;
+background: linear-gradient( 0deg, lightblue, rgb(129,154,255));
+}{
+      font-family: Arial, sans-serif;
+      background: white;
+      padding: 40px;
+ }
+
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .card {
+      background: linear-gradient( 45deg, lightblue, white);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 30%;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      color: #333;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 80%;
+      }
+    }
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .form-card {
+      width: 100%;
+      background: linear-gradient( 45deg, lightblue, white);
+      padding: 20px;
+      box-sizing: border-box;
+      border-top: 2px solid #ccc;
+    }
+
+    .form-card h2 {
+      margin-top: 0;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .rating-group input {
+      margin-right: 5px;
+    }
+
+    .submit-btn {
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #0056b3;
+    }
+
+
+</style>
 </head>
 <body>
 <a href="https://www.askantech.com">
   <img src="image.png" alt="Askantech Logo" width="100%">
 </a>
+
+
+<h2>Meet Our Team</h2>
+<div class="card-container">
+  <div class="card">
+    <img src="https://via.placeholder.com/100" alt="Profile 1">
+    <h3>Alice Johnson</h3>
+    <p>Frontend Developer with a passion for beautiful interfaces.</p>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/100" alt="Profile 2">
+    <h3>Bob Smith</h3>
+    <p>Backend expert who builds scalable web services.</p>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/100" alt="Profile 3">
+    <h3>Clara Lee</h3>
+    <p>UX designer creating intuitive and engaging experiences.</p>
+  </div>
+</div>
+
+
   <!-- Header -->
   <h1><a href="https://www.askantech.com" target="_blank">Askan Technologies</a></h1>
-  <marquee><h3>AI-Powered Custom Software Development Company</h3></marquee>
+  <marquee><p>AI-Powered Custom Software Development Company</p></marquee>
 
   <!-- Contact Information -->
   <h2><a href="https://www.askantech.com/contact-us/" target="blank">Contact Us</a></h2>
@@ -52,6 +189,45 @@
   <!-- Footer -->
   <h2>About Us</h2>
   <p>We are the leading AI-powered IT company, leveraging cutting-edge technologies to develop intelligent applications.</p>
+
+<div class="content">
+  <!-- Your main content here -->
+</div>
+
+<div class="form-card">
+  <h2>Feedback Form</h2>
+  <form action="#" method="POST">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone No:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+
+    <div class="form-group rating-group">
+      <label>Rating (1-5):</label>
+      <label><input type="radio" name="rating" value="1"> 1</label>
+      <label><input type="radio" name="rating" value="2"> 2</label>
+      <label><input type="radio" name="rating" value="3"> 3</label>
+      <label><input type="radio" name="rating" value="4"> 4</label>
+      <label><input type="radio" name="rating" value="5"> 5</label>
+    </div>
+
+    <div class="form-group">
+      <label><input type="checkbox" name="satisfied" value="yes"> I found a satisfying topic on askantech.com</label>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</div>
 
 <a href="https://www.askantech.com">
   <img src="image2.png" alt="Askantech Logo" width="100%">
