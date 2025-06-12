@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM]
+"Composition"=dword:00000000
+"CompositionPolicy"=dword:00000002
+"UseMachineCheck"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Avalon.Graphics]
+"DisableHWAcceleration"=dword:00000001
